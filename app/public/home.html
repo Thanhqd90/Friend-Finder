@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- viewport meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Browser title -->
+    <title>Dance Buddy Home</title>
+</head>
+    <style>
+        body {
+            background-color: rgb(168, 87, 87);
+            color:white; 
+            text-shadow: 0 0 2px black, -1px -1px 2px black, 1px 0 2px black, 1px 1px 2px black;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        .jumbotron {
+            background-color: rgb(73, 0, 0);
+        }
+
+        #mainHead {
+            font-size: 3rem;
+        }
+
+        #survey {
+            margin-top: 25px;
+            background-color: rgb(134, 0, 40);
+            border-color: rgb(4, 1, 27);
+        }
+
+        #survey:hover {
+            background-color: rgb(211, 20, 154);
+            border-color: rgb(0, 0, 0);
+        }
+    </style>
+<body>
+    <div class="container-fluid text-center">
+        <div class="jumbotron">
+            <h1 id="mainHead"><i class="fab fa-facebook"></i> Dance Game Buddy Finder</h1>
+            <hr>
+            <h3>Answer some questions to find your new dancing partner <i class="fas fa-arrows-alt"></i></h3>
+            <a href="/survey">
+                <button type="button" class="btn btn-primary btn-lg" id="survey"><i class="fas  fa-list-alt"></i> Take Survey</button>
+            </a>
+        </div>
+        <footer class="ml-2 text-left">
+            <a href="/api/friends">API Buddy List </a>  |  
+            <a href="https://github.com/thanhqd190/Friend-Finder"> GitHub Repo</a>
+        </footer>
+    </div>
+</body>
+</html>

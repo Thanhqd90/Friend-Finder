@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- viewport meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Browser title -->
+    <title>Dance Buddy Survey</title>
+</head>
+
+<style>
+        body {
+            background-color: rgb(73, 0, 0);
+            color:white; 
+            text-shadow: 0 0 2px black, -1px -1px 2px black, 1px 0 2px black, 1px 1px 2px black;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        a {
+            padding-bottom: 20px;
+        }
+
+        label {
+            /* font-size: 17px; */
+        }
+
+        #surveyHeader {
+            margin-top: 20px;
+            /* font-size: 50px; */
+        }
+
+        #formSubmit {
+            width: 100%;
+            /* font-size: 20px; */
+            background-color: rgb(134, 0, 40);
+            border-color: rgb(4, 1, 27);
+        }
+
+        #formSubmit:hover {
+            background-color: rgb(211, 20, 154);
+            border-color: rgb(0, 0, 0);
+        }
+
+        h4 {
+            font-weight: normal;
+        }
+
+        .question {
+            width: 275px;
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <h1 id="surveyHeader"> Survey Questions</h1>
+        <hr>
+        <form name="surveyForm">
+            <h2>About you</h2>
+            <div class="form-group">
+                <label for="user-name">
+                    <h4>Name (Required)</h4>
+                </label>
+                <input class="form-control" type="text" id="userName" required>
+            </div>
+            <div class="form-group">
+                <label for="user-picture">
+                    <h4>Link to Photo Image (Required)</h4>
+                </label>
+                <input class="form-control" type="text" id="userPicture" required>
+            </div>
+            <hr>
+
+            <!-- Question 1-->
+            <div class="form-group">
+                <h4>Question 1</h4>
+                <label for="question1">You prefer 5 panel games over 4 panel games</label>
+                <select required class="form-control chosen-select question" id="q1">
+                    <option value="">Select answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <!-- Question 2-->
+            <div class="form-group">
+                <h4>Question 2</h4>
+                <label for="question2">You enjoy playing charts with diverse, challenging rhythms</label>
+                <select class="form-control chosen-select question" id="q2">
+                    <option value="">Select answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <!-- Question 3-->
+            <div class="form-group">
+                <h4>Question 3</h4>
+                <label for="question3">Your motivation for playing is primarily to pass more difficult songs regardless of the grade</label>
+                <select class="form-control chosen-select question" id="q3">
+                    <option value="">Select answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <!-- Question 4-->
+            <div class="form-group">
+                <h4>Question 4</h4>
+                <label for="question4">Your motivation for playing is primarily to score more accurately on easier songs</label>
+                <select class="form-control chosen-select question" id="q4">
+                    <option value="">Select answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <!-- Question 5-->
+            <div class="form-group">
+                <h4>Question 5</h4>
+                <label for="question5">You prefer to play with a large group of people</label>
+                <select class="form-control chosen-select question" id="q5">
+                    <option value="">Select answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <!-- Question 6-->
+            <div class="form-group">
+                <h4>Question 6</h4>
+                <label for="question6">You prefer spend your time playing a select few songs multiple times in order to achieve the highest score possible</label>
+                <select class="form-control chosen-select question" id="q6">
+                    <option value="">Select answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <!-- Question 7-->
+            <div class="form-group">
+                <h4>Question 7</h4>
+                <label for="question7">You prefer spend your time playing many different songs to increase your chart knowledge</label>
+                <select class="form-control chosen-select question" id="q7">
+                    <option value="">Select answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <!-- Question 8-->
+            <div class="form-group">
+                <h4>Question 8</h4>
+                <label for="question8">You find it hard to stay motivated playing by yourself</label>
+                <select class="form-control chosen-select question" id="q8">
+                    <option value="">Select answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <!-- Question 9-->
+            <div class="form-group">
+                <h4>Question 9</h4>
+                <label for="question9">When creating goals, you put tournament play into consideration</label>
+                <select class="form-control chosen-select question" id="q9">
+                    <option value="">Select answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <!-- Question 10-->
+            <div class="form-group">
+                <h4>Question 10</h4>
+                <label for="question10">You find it frustrating when some random kid plays Daikenkai and attracts a large crowd and becomes internet famous</label>
+                <select class="form-control chosen-select question" id="q10">
+                    <option value="">Select answer</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <!-- Submit Button for Form -->
+            <button type="submit" class="btn btn-primary" id="formSubmit">Submit <i class="fas fa-file-import"></i></button>
+            <hr>
+
+        </form>
+
+        <footer class="text-left">
+            <a href="/api/friends">API Buddy List </a> |
+            <a href="https://github.com/thanhqd90/Friend-Finder"> GitHub Repo</a>
+        </footer>
+    </div>
+
+    <!-- Modal For Form Control-->
+    <div class="modal" id="formControlModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Required Fields</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>You have left some questions unanswered.<br>
+                        Please go back and answer all of the questions.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal For Best Match-->
+    <div class="modal fade" id="bestMatchModal" tabindex="-1" role="dialog" aria-labelledby="bestMatchModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title text-center" id="bestMatchModalHeader">Your New Dance Game Buddy!!</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                    <div class="col-6">
+                    <img id="userResult" width="100%" height="350px" src="" alt="Photo of the Best Matched Friend">
+                    </div>
+                    <div class="col-6">
+                    <img id="bestMatchPhoto" width="100%" height="350px" src="" alt="Photo of the Best Matched Friend">
+                </div>
+            </div>
+            <div class="row">
+            <h3 class="text-center" id="bestMatchName">Hello, friend! My name is </h3>
+            </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="doItAgain" class="btn btn-secondary" data-dismiss="modal">Fill Out Survey
+                        Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $("#formSubmit").on("click", function (event) {
+            event.preventDefault();
+
+            function formValidation() {
+
+                var isValid = true;
+
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+
+                return isValid;
+            };
+
+            if (formValidation()) {
+
+                var newFriendData = {
+                    name: $("#userName").val(),
+                    photo: $("#userPicture").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+
+                // Sending the user information to apiRoutes.js to match with friend, then it sends back the best match
+                // function(data) data - contains bestMatch information
+                $.post("/api/friends", newFriendData, function (data) {
+
+                    // If statement is able to run because res.json(bestMatch); in the app.post request in apiRoutes.js, which sent back the best match based on the user's answers
+                    if (data) {
+                        
+                        $("#userResult").attr("src", newFriendData.photo);
+
+                        $("#bestMatchName").text("Hello, " + newFriendData.name + "! My name is " +
+                            data.name + "!");
+                        $("#bestMatchPhoto").attr("src", data.photo);
+                        $("#bestMatchModal").modal("toggle");
+
+                    }
+                });
+
+            } else {
+                $("#formControlModal").modal("toggle");
+            }
+        });
+
+        $("#doItAgain").on("click", function (event) {
+            event.preventDefault();
+            location.reload();
+        })
+    </script>
+</body>
+
+</html>
