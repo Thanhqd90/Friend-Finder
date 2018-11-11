@@ -5,29 +5,29 @@ var friendsArray = [
       "photo":"https://scontent.fhou1-1.fna.fbcdn.net/v/t1.0-9/18740483_1708642752486092_429072749019727601_n.jpg?_nc_cat=100&_nc_ht=scontent.fhou1-1.fna&oh=2d7539a1bd2e2da767c9e71370e7bdd8&oe=5C426638",
       "scores":[
           1,
+          3,
+          5,
           1,
+          3,
+          2,
           1,
+          3,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1
+          5
         ]
     },{
       "name":"Thanh",
       "photo":"https://scontent.fhou1-1.fna.fbcdn.net/v/t1.0-9/43649905_10217552949119462_5087053406770561024_n.jpg?_nc_cat=101&_nc_ht=scontent.fhou1-1.fna&oh=f99877e6a32e8c16fb6e4db850ef4280&oe=5C7AB5A1",
       "scores":[
           5,
+          2,
+          5,
+          3,
+          5,
+          4,
           5,
           5,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
+          1,
           5
         ]
     },{
@@ -50,15 +50,15 @@ var friendsArray = [
       "photo":"https://scontent.fhou1-2.fna.fbcdn.net/v/t1.0-9/40535894_10204941301569138_1868799090066718720_n.jpg?_nc_cat=105&_nc_ht=scontent.fhou1-2.fna&oh=15f7c8d24166d186d51dde816ae69b45&oe=5C76684D",
       "scores":[
           3,
+          2,
           3,
+          4,
+          4,
+          4,
           3,
+          2,
           3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3
+          5
         ]
     },{
       "name":"Donyal",

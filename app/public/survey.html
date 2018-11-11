@@ -17,7 +17,7 @@
 </head>
 
 <style>
-        body {
+    body {
             background-color: rgb(73, 0, 0);
             color:white; 
             text-shadow: 0 0 2px black, -1px -1px 2px black, 1px 0 2px black, 1px 1px 2px black;
@@ -28,18 +28,14 @@
             padding-bottom: 20px;
         }
 
-        label {
-            /* font-size: 17px; */
-        }
-
         #surveyHeader {
             margin-top: 20px;
-            /* font-size: 50px; */
+            font-size: 50px;
         }
 
         #formSubmit {
             width: 100%;
-            /* font-size: 20px; */
+            font-size: 20px;
             background-color: rgb(134, 0, 40);
             border-color: rgb(4, 1, 27);
         }
@@ -60,7 +56,7 @@
 
 <body>
     <div class="container">
-        <h1 id="surveyHeader"> Survey Questions</h1>
+        <h1 id="surveyHeader"> Dance Buddy Survey</h1>
         <hr>
         <form name="surveyForm">
             <h2>About you</h2>
@@ -109,7 +105,8 @@
             <!-- Question 3-->
             <div class="form-group">
                 <h4>Question 3</h4>
-                <label for="question3">Your motivation for playing is primarily to pass more difficult songs regardless of the grade</label>
+                <label for="question3">Your motivation for playing is primarily to pass more difficult songs regardless
+                    of the grade</label>
                 <select class="form-control chosen-select question" id="q3">
                     <option value="">Select answer</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -123,7 +120,8 @@
             <!-- Question 4-->
             <div class="form-group">
                 <h4>Question 4</h4>
-                <label for="question4">Your motivation for playing is primarily to score more accurately on easier songs</label>
+                <label for="question4">Your motivation for playing is primarily to score more accurately on easier
+                    songs</label>
                 <select class="form-control chosen-select question" id="q4">
                     <option value="">Select answer</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -151,7 +149,8 @@
             <!-- Question 6-->
             <div class="form-group">
                 <h4>Question 6</h4>
-                <label for="question6">You prefer spend your time playing a select few songs multiple times in order to achieve the highest score possible</label>
+                <label for="question6">You prefer spend your time playing a select few songs multiple times in order to
+                    achieve the highest score possible</label>
                 <select class="form-control chosen-select question" id="q6">
                     <option value="">Select answer</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -165,7 +164,8 @@
             <!-- Question 7-->
             <div class="form-group">
                 <h4>Question 7</h4>
-                <label for="question7">You prefer spend your time playing many different songs to increase your chart knowledge</label>
+                <label for="question7">You prefer spend your time playing many different songs to increase your chart
+                    knowledge</label>
                 <select class="form-control chosen-select question" id="q7">
                     <option value="">Select answer</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -207,7 +207,8 @@
             <!-- Question 10-->
             <div class="form-group">
                 <h4>Question 10</h4>
-                <label for="question10">You find it frustrating when some random kid plays Daikenkai and attracts a large crowd and becomes internet famous</label>
+                <label for="question10">You find it frustrating when some random kid plays Daikenkai and attracts a
+                    large crowd and becomes internet famous</label>
                 <select class="form-control chosen-select question" id="q10">
                     <option value="">Select answer</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -264,16 +265,16 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                    <div class="col-6">
-                    <img id="userResult" width="100%" height="350px" src="" alt="Photo of the Best Matched Friend">
+                        <div class="col-6">
+                            <img id="userResult" width="100%" height="350px" src="" alt="Photo of the Best Matched Friend">
+                        </div>
+                        <div class="col-6">
+                            <img id="bestMatchPhoto" width="100%" height="350px" src="" alt="Photo of the Best Matched Friend">
+                        </div>
                     </div>
-                    <div class="col-6">
-                    <img id="bestMatchPhoto" width="100%" height="350px" src="" alt="Photo of the Best Matched Friend">
-                </div>
-            </div>
-            <div class="row">
-            <h3 class="text-center" id="bestMatchName">Hello, friend! My name is </h3>
-            </div>
+                    <div class="row">
+                        <h3 class="text-center" id="bestMatchName">Hello, friend! My name is </h3>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" id="doItAgain" class="btn btn-secondary" data-dismiss="modal">Fill Out Survey
@@ -331,7 +332,7 @@
 
                     // If statement is able to run because res.json(bestMatch); in the app.post request in apiRoutes.js, which sent back the best match based on the user's answers
                     if (data) {
-                        
+
                         $("#userResult").attr("src", newFriendData.photo);
 
                         $("#bestMatchName").text("Hello, " + newFriendData.name + "! My name is " +

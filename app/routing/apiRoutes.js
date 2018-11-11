@@ -1,14 +1,15 @@
+//Requires data from data/friends
 var friendsData = require ("../data/friends.js");
 
 // Get Request to List Friends Data
 module.exports = function (app) {
 
-    // All of the friends in friendsArray
+    // Display all friends
     app.get("/api/friends", function(req, res) {
         res.json(friendsData);
     });
 
-    // Post Request to Add New Friend to friendsArray
+    // Post Request to add new friend
     app.post("/api/friends", function(req, res) {
 
         var newFriend = req.body;
